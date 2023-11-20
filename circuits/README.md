@@ -1,2 +1,18 @@
-# zk-plasma-poc
-PoC of ZK verified Plasma Cash in Noir
+# UTXO Model for Validium Exit Games
+
+The entrypoint for the prover is called "main". It receives public (pub) and private inputs, deserialized and read from Prover.toml file.
+The resulting proof is stored in proofs/zk_plasma.proof file. The verifier expects the public inputs in Verifier.toml file
+
+# Usage
+- Prove:
+```
+nargo prove
+```
+- Verify:
+```
+nargo verify
+```
+- Generate solidity verifier
+```
+nargo codegen-verifier
+```

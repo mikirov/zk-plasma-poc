@@ -2,7 +2,7 @@
 name = "zk_plasma"
 type = "bin"
 authors = [""]
-compiler_version = "0.19.2"
+compiler_version = ">=0.18"
 
 [dependencies]
 noir_biguint = {path = "lib/biguint/" }
